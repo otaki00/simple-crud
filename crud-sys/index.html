@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/limonte-sweetalert2/11.3.4/sweetalert2.css" integrity="sha512-fSWkjL6trYj6KvdwIga30e8V4h9dgeLxTF2q2waiwwafEXD+GXo5LmPw7jmrSDqRun9gW5KBR+DjvWD+5TVr8A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+   
+</head>
+<body>
+
+    <div class="add-course">
+       
+        <div class="container">
+            <!-- we didn't use form here because it's will make problem will solve later -->
+            <h1>CRUD System</h1>
+
+        <label for="">course name</label>
+        <input type="text" placeholder="cource name"  id="courseName">
+        <div class="warn-mssg">strat with capital latter....</div>
+
+        <label for="">course category</label>
+        <input type="text" placeholder="cource category"  id="courseCategory">
+
+        <label for="">course price</label>
+        <input type="number" placeholder="cource price" id="coursePrice" >
+
+        <label for="">course description</label>
+        <textarea id="courseDescription"></textarea>
+
+        <button id="submit">Add Cource</button>
+        <button id="clear">clear</button>
+
+
+
+    </div>
+
+    <input type="search" placeholder="search... " id="search" >
+
+
+
+    <table border="1">
+        <thead>
+            <tr>
+                <th>#</th>
+                <th>name</th>
+                <th>category</th>
+                <th>price</th>
+                <th>description</th>
+                <th>update</th>
+                <th>delete</th>
+            </tr>
+        </thead>
+
+        <tbody id="data">
+
+        </tbody>
+    </table>
+    </div>
+    
+
+
+
+
+<!-- for sweet alert  -->
+<script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/limonte-sweetalert2/11.3.4/sweetalert2.min.js" integrity="sha512-GDiDlK2vvO6nYcNorLUit0DSRvcfd7Vc0VRg7e3PuZcsTwQrJQKp5hf8bCaad+BNoBq7YMH6QwWLPQO3Xln0og==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="main.js"></script>
+</body>
+</html>
